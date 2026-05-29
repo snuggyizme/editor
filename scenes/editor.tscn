@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://nda2lx0eeu60"]
 
 [ext_resource type="Texture2D" uid="uid://dwvaciknbpudb" path="res://icon.svg" id="1_b1cmn"]
+[ext_resource type="Texture2D" uid="uid://c27qwximx4p3b" path="res://assets/icons/tileDrawTool.png" id="1_pxqd5"]
+[ext_resource type="Texture2D" uid="uid://dmy286i57qy47" path="res://assets/icons/tileLineTool.png" id="2_ba0ut"]
+[ext_resource type="Texture2D" uid="uid://83ojquvj32cx" path="res://assets/icons/tileRectTool.png" id="3_xg7d5"]
+[ext_resource type="Texture2D" uid="uid://txrgi0xq537w" path="res://assets/icons/tileSelectTool.png" id="4_eqbpn"]
+[ext_resource type="Texture2D" uid="uid://8vt7njxnp378" path="res://assets/icons/objectPlaceTool.png" id="5_eqbpn"]
+[ext_resource type="Texture2D" uid="uid://0wjqjy8k1o2r" path="res://assets/icons/objectMoveTool.png" id="6_5lcyj"]
+[ext_resource type="Texture2D" uid="uid://cca1xrj64coup" path="res://assets/icons/objectSelectTool.png" id="7_5tm2q"]
+[ext_resource type="Texture2D" uid="uid://b6up6y41nf8gy" path="res://assets/icons/viewMoveTool.png" id="8_j8y2p"]
 
 [node name="Editor" type="Control" unique_id=1523122408]
 layout_mode = 3
@@ -24,13 +32,76 @@ split_offset = 30
 custom_minimum_size = Vector2(30, 0)
 layout_mode = 2
 
+[node name="Container" type="VBoxContainer" parent="SplitContainer/Toolbar" unique_id=908413818]
+layout_mode = 2
+alignment = 1
+
+[node name="TileDrawToolButton" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=396405965]
+layout_mode = 2
+text = "Tile Draw"
+icon = ExtResource("1_pxqd5")
+alignment = 0
+clip_text = true
+
+[node name="TileLineToolButton" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=2142174177]
+layout_mode = 2
+text = "Tile Line"
+icon = ExtResource("2_ba0ut")
+alignment = 0
+clip_text = true
+
+[node name="TileRectToolButton" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=1821229974]
+layout_mode = 2
+text = "Tile Rect"
+icon = ExtResource("3_xg7d5")
+alignment = 0
+clip_text = true
+
+[node name="TileSelectToolButton" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=94464227]
+layout_mode = 2
+text = "Tile Select"
+icon = ExtResource("4_eqbpn")
+alignment = 0
+clip_text = true
+
+[node name="ObjectPlaceToolButton" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=186470593]
+layout_mode = 2
+text = "Object Place"
+icon = ExtResource("5_eqbpn")
+alignment = 0
+clip_text = true
+
+[node name="ObjectMoveToolButton" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=1385516001]
+layout_mode = 2
+text = "Object Move"
+icon = ExtResource("6_5lcyj")
+alignment = 0
+clip_text = true
+
+[node name="ObjectSelectToolButton" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=411445999]
+layout_mode = 2
+text = "Object Select"
+icon = ExtResource("7_5tm2q")
+alignment = 0
+clip_text = true
+
+[node name="ViewMoveTool" type="Button" parent="SplitContainer/Toolbar/Container" unique_id=1118255567]
+layout_mode = 2
+text = "Pan"
+icon = ExtResource("8_j8y2p")
+alignment = 0
+clip_text = true
+
+[node name="CenterContainer" type="CenterContainer" parent="SplitContainer/Toolbar" unique_id=834443203]
+layout_mode = 2
+
 [node name="ViewportContainer" type="SubViewportContainer" parent="SplitContainer" unique_id=261875485]
 custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 stretch = true
 
 [node name="Viewport" type="SubViewport" parent="SplitContainer/ViewportContainer" unique_id=1839710739]
-size = Vector2i(1166, 900)
+size = Vector2i(1160, 900)
 
 [node name="Jabes Jemmimamem" type="Sprite2D" parent="SplitContainer/ViewportContainer/Viewport" unique_id=1046846583]
 position = Vector2(506.99997, 369.99997)
