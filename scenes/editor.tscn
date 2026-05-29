@@ -92,9 +92,6 @@ icon = ExtResource("8_j8y2p")
 alignment = 0
 clip_text = true
 
-[node name="CenterContainer" type="CenterContainer" parent="SplitContainer/Toolbar" unique_id=834443203]
-layout_mode = 2
-
 [node name="ViewportContainer" type="SubViewportContainer" parent="SplitContainer" unique_id=261875485]
 custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
